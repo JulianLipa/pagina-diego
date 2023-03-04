@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    /*
+        font-family: 'Archivo', sans-serif;
+        font-family: 'Libre Baskerville', serif;
+    */
+}
+
+@font-face{
+    font-family: coolvetica;
+    src: url(coolvetica.otf);
+}
+
+@font-face{
+    font-family: modern20;
+    src: url(modern20.TTF);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500&display=swap');
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+:root{
+    --main-color: rgb(126, 126, 126); /*blanco*/
+    --second-color: rgb(37, 37, 37); /*negro*/
+    --third-color: rgb(174, 174, 174); /*gris*/
+}
+
+/*Mobile*/
+@media (max-width: 600px) {
+
+    .card{
+        width: 100% !important;
+    }
+
+    .title{
+        font-size: 2em !important;
+    }
+
+    .long-text{
+        font-size: 1.5em !important;
+    }
+
+    .card-img{
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: cover;
+    }
+    
+}
+
+/*Tablet*/
+@media (max-width: 800px){
+    .card{
+        width: 50% !important;
+    }
+}
+
+
+/*Header*/
+
+header{
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+    border-bottom: 1px solid var(--third-color);
+
+    z-index: 100;
+}
+
+header .long-text{
+    font-size: 1.5em;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    
+    width: 100%;
+    padding-left: 2.9%;
+}
+
+nav ul li{
+    text-align: left;
+    font-size: 0.6em;
+
+    margin: 10px;
+}
+
+nav ul li a{
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+nav ul li a:hover{
+    color: var(--main-color) !important;
+}
+
+header nav ul li a i{
+    color: var(--third-color);
+    font-size: 1.8em !important;
+    float: right;
+}
+
+header nav ul li a i:hover{
+    color: var(--main-color) !important;
+}
+
+
+/*Header home*/
+
+#home{
+    border: 0;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#home2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hijo-home2{
+    text-align: center;
+}
+
+#garibaldi{
+    display: flex;
+    justify-content: center;
+    margin: 1.3% auto;
+    width: 41%;
+}
+
+#nav-home{
+    display: flex;
+    border: 0;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#nav-home ul{
+    display: flex;
+    border: 0;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+
+#nav-home li{
+    padding: 0 3.5% !important;
+    font-size: 1.5em;
+}
+
+#carrousel-div{
+    display: flex;
+}
+
+#random-carrousel{
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    object-position: 100%;
+
+    position: relative;
+}
+
+#carrousel-div a{
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    padding: 0 0.5%;
+}
+
+#carrousel-div a img{
+    width: 10%;
+}
+
+
+/*Clases*/
+
+.title{
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: coolvetica;
+}
+
+.long-text{
+    font-family: modern20;
+    font-size: 0.7em;
+    text-align: justify;
+    margin: 0 auto;
+
+    color: var(--third-color);
+
+    width: 91%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+a:hover{
+    color: var(--main-color) !important;
+}
+
+main{
+    padding: 0 2%;
+}
+
+/*Cards*/
+
+#main-cards{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+#main-cards h3:hover{
+    text-decoration: underline;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 33.33%;
+    height: 10%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.card .title{
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+.view-card{
+    margin: 0 auto;
+    text-align: justify;
+    width: 91%;
+}
+
+hr{
+    height: 0px;
+    border: none;
+    border-top: 1px solid var(--second-color);
+}
+
+.card-img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#autorretrato{
+    object-position: 90% 15% !important;
+}
+
+.card .long-text{
+    font-size: 0.9em;
+    padding: 1%;
+}
+
+/*Contacto*/
+
+#form-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+
+    width: 30%;
+}
+
+#form-1 #text{
+    display: flex;
+    font-size: 2em;
+}
+
+#form-1 h1{
+    width: 100%;
+    font-size: 1em;
+}
+
+#form-1 .form-element{
+    width: 100%;
+    height: 30%;
+    margin: 10px;
+
+    background-color: var(--second-color);
+    border: 1px solid white;
+    color: white;
+}
+
+#form-1 .form-element::placeholder{
+    color: white;
+    opacity: 0.5;
+    padding: 10px;
+    margin: 10px;
+}
+
+#form-1 #message{
+    height: 70%;
+}
+
+#form-1 #submit{
+    background-color: var(--second-color);
+    border: 1px solid white;
+}
+
+#form-1 #submit-button{
+    display: flex;
+    justify-content: center;
+
+    width: 35%;
+    height: 70%;
+}
+
+#form-1 #submit{
+    background-color: white;
+    border: 1px solid var(--second-color);
+    color: var(--second-color);
+    
+    transition: 0.5s;
+}
+
+#form-1 #submit:hover{
+    background-color: var(--second-color);
+    border: 1px solid white;
+    color: white;
+
+    transition: 0.5s;
+}
+
+
+/*Pasajeros en trance*/
+
+#pasajeros{
+    top: 0;
+    display: flex;
+    padding: 2%;
+    background-color: white;
+    width: 100%;
+    padding-left: 2.4%;
+    position: sticky;
+}
+
+#pasajeros:hover{
+    color: var(--main-color);
+}
+
+#volver{
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+    color: var(--third-color);
+    font-size: 0.8em;
+    visibility: hidden;
+}
+
+#volver:hover{
+    cursor: pointer;
+    color: var(--second-color);
+}
+
+
+#galeria-pasajeros{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#galeria-pasajeros img{
+    width: 50%;
+}
+
+#pasajeros-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2.4%;
+}
+
+#right{
+    margin-left: 2%;
+}
+
+#pasajeros-bottom #left{
+    display: flex;
+    justify-content: end;
+}
+
+.bottom-atras{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    margin: 4% 0;
+    padding: 0.5%;
+    border: 1px solid var(--second-color);
+}
+
+.bottom-atras i{
+    font-size: 1.5em;
+}
+
+/*Musica*/
+
+#musica-logo{
+    width: 10%;
+    margin: 1% 2.5%;
+}
+
+footer .title{
+    font-size: 0.9em;
+    margin-left: 4.3%;
+}
+
+#card-musica{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+#card-musica a{
+    display: flex;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+
+    
+    margin: 1%;
+    padding: 1% auto;
+    margin-bottom: 1%;
+}
+
+#card-musica a:hover{
+    border: 1px solid var(--third-color);
+}
+
+.text-musica{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+#card-musica .title{
+    padding: 1%;
+}
+
+#card-musica .long-text{
+    width: 100% !important;
+    padding: 0 1%;
+    font-size: 0.8em;
+}
+
+.img-musica{
+    width: 30%;
+}

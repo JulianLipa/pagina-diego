@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+	<meta charset=”UTF-8”>
+	<title>Diego Garibaldi</title>
+
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href=""/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ecb957ab20.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="long-text">Garibaldi</a></li>
+            <li><a href="index.html" class="long-text">Fotografía</a></li>
+            <li><a href="musica.html" class="long-text">Música</a></li>
+            <li><a href="contact.html" class="long-text">Contacto</a></li>
+            <li id="instagram"><a href="https://www.instagram.com/fviveinfo_diego_garibaldi/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <section id="form-1">
+            <div id="text">
+                <h1 class="title">Contactate conmigo</h1>
+            </div>
+    
+            <form id="form-contact" onsubmit="sendEmail(); reset(); return false;">
+                <input id="name" type="text" placeholder="NAME" class="form-element" required>
+                <input id="email" type="text" placeholder="EMAIL" class="form-element" id="email" required>
+                <textarea id="message" type="text" placeholder="MESSAGE" class="form-element" required></textarea>
+                
+                <div id="submit-button">
+                    <input id="submit" type="submit" value="SEND" class="form-element">
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+<script src="assets/script/script.js"></script>
+</html>
