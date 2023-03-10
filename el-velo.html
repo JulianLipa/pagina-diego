@@ -44,18 +44,18 @@
     <main>
         <a id="pasajeros">            
             <h1 id="texto-pasajeros">
-                <h2 class="title">Pasajeros en trance</h2>
-                <h2 class="title" id="año">(2008)</h2>
+                <h2 class="title">Autorretrato</h2>
+                <h2 class="title" id="año">(2011)</h2>
             </h1>
         </a>
 
         <div id="carrousell-pasajeros">
 
-            <div class="aside-list">
+            <div class="aside-list" id="autorretrato-list">
                 <nav>
                     <ul>
-                        <li><a href="fotografia.html"><i class="fa-solid fa-arrow-left" id="arrow"></i>Volver</a></li>
-                        <li><a href="autorretrato2.html" class="long-text">Autorretrato (2011)</a></li>
+                        <li id="volver-list"><a href="fotografia.html"><i class="fa-solid fa-arrow-left" id="arrow"></i>Volver</a></li>
+                        <li><a href="pasajeros-en-trance.html" class="long-text">Pasajeros en trance (2008)</a></li>
                         <li><a href="el-velo.html" class="long-text">El velo (2014)</a></li>
                         <li><a href="" class="long-text">Lapsus (2016)</a></li>
                         <li><a href="" class="long-text">Proyecto es Copia Proyecto (2017)</a></li>
@@ -73,7 +73,7 @@
                     <p class="long-text" class="pag" id="pagina"></p>
                 </div>
 
-                <img src="" id="img-pasajeros" alt="" class="img-carrousell">
+                <img src="" id="img-velo" alt="" class="img-carrousell">
             </div>
         </div>
 
@@ -82,12 +82,14 @@
 </body>
 
 <script>
-    var img = $("#img-pasajeros");
-    var imgLength = 28;
+    var img = $("#img-velo");
+    var imgDom = document.getElementById("img-velo");
+    var imgLength = 5;
+    var carpeta = "el-velo";
 
     var posicionVector = 1;
 
-    document.getElementById("img-pasajeros").src="assets/images/pasajeros-en-trance/0"+posicionVector+".JPG";
+    imgDom.src="assets/images/"+carpeta+"/0"+posicionVector+".JPG";
 
     $("#pagina").text(posicionVector+"/"+imgLength);
 
@@ -104,9 +106,9 @@
         }
 
         if(posicionVector >= 10){
-            document.getElementById("img-pasajeros").src="assets/images/pasajeros-en-trance/"+posicionVector+".JPG";
+            imgDom.src="assets/images/"+carpeta+"/"+posicionVector+".JPG";
         }else{
-            document.getElementById("img-pasajeros").src="assets/images/pasajeros-en-trance/0"+posicionVector+".JPG";
+            imgDom.src="assets/images/"+carpeta+"/0"+posicionVector+".JPG";
         }
     });
 
@@ -119,9 +121,9 @@
         }
 
         if(posicionVector >= 10){
-            document.getElementById("img-pasajeros").src="assets/images/pasajeros-en-trance/"+posicionVector+".JPG";
+            imgDom.src="assets/images/"+carpeta+"/"+posicionVector+".JPG";
         }else{
-            document.getElementById("img-pasajeros").src="assets/images/pasajeros-en-trance/0"+posicionVector+".JPG";
+            imgDom.src="assets/images/"+carpeta+"/0"+posicionVector+".JPG";
         }
     });
 </script>

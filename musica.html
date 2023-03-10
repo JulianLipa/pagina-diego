@@ -6,23 +6,36 @@
 	<title>Garibaldi</title>
 
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href=""/>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+    <!--<link href="assets/css/responsive.css" rel="stylesheet" type="text/css">-->
+    <link rel="shortcut icon" href="assets/images/logo.png"/>
 
     <script src="https://kit.fontawesome.com/ecb957ab20.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
-<header id="home-header">
-    <nav>
+<header>
+    <nav id="nav-responsive">
+        <a href=""><h1 class="long-text">Garibaldi</h1></a>
+        <i class="fa-solid fa-bars" id="nav-bar"></i>
+        <div id="overlay-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="long-text" id="logo">Home</a></li>
+                        <li><a href="musica.html" class="long-text" id="logo">Música</a></li>
+                        <li><a href="contactoFoto.html" class="long-text" id="logo">Contacto</a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/nuboselvarecords/" target="_blank" class="icon"><i id="logo" class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+        </div>
+    </nav>
+
+    <nav id="nav-desktop">
         <ul>
             <li><a href="index.html" class="long-text" id="logo">Garibaldi</a></li>
-            <li><a href="index.html" class="long-text" id="logo">Fotografía</a></li>
-            <li><a href="contacto.html" class="long-text">Contacto</a></li>
-            <li id="instagram"><a href="https://www.instagram.com/fviveinfo_diego_garibaldi/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="fotografia.html" class="long-text" id="logo">Fotografía</a></li>
+            <li><a href="contactoMusica.html" class="long-text">Contacto</a></li>
+            <li id="instagram"><a href="https://www.instagram.com/nuboselvarecords/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
     </nav>
 </header>
@@ -30,63 +43,58 @@
 <body>
     <main>
         <img src="assets/images/index_musica/nuboselva-records-logo.jpg" id="musica-logo" alt="">
-
-        <h2 class="title"></h2>
-
         <div id="card-musica">
-            <a href="">
+            <article href="">
                 <img src="assets/images/index_musica/fina-gema-2016.jpg" class="img-musica" alt="">
-                <div class="text-musica">
-                    <h3 class="title">Fina Gema (2016)</h3>
-                    <h4 class="long-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi odio quae debitis et laboriosam consectetur quam minus doloremque quasi sed laborum.</h4>
+                <div class="overlay-musica">
+                    <a href="https://on.soundcloud.com/J2LQr" target="blank"><i class="fa-brands fa-soundcloud" id="soundcloud"></i></a>
                 </div>
-            </a>
+            </article>
 
-            <a href="">
+            <article href="">
                 <img src="assets/images/index_musica/magico-mundo-2017.jpg" class="img-musica" alt="">
-                <div class="text-musica">
-                    <h3 class="title">Magico Mundo (2017)</h3>
-                <h4 class="long-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi odio quae debitis et laboriosam consectetur quam minus doloremque quasi sed laborum.</h4>
+                <div class="overlay-musica">
+                    <a href="https://youtu.be/JMpAAliv4Dc" target="blank"><i class="fa-brands fa-youtube" id="youtube"></i></a>
                 </div>
-            </a>
+            </article>
 
-            <a href="">
+            <article href="">
                 <img src="assets/images/index_musica/aureo-2017.jpg" class="img-musica" alt="">
-                <div class="text-musica">
-                    <h3 class="title">Aureo (2017)</h3>
-                    <h4 class="long-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi odio quae debitis et laboriosam consectetur quam minus doloremque quasi sed laborum.</h4>
+                <div class="overlay-musica">
+                    <a href="https://on.soundcloud.com/8r4mq" target="blank"><i class="fa-brands fa-soundcloud" id="soundcloud"></i></a>
                 </div>
-            </a>
+            </article>
 
-            <a href="">
+            <article href="">
                 <img src="assets/images/index_musica/guetto-2020.jpg" class="img-musica" alt="">
-                                
-                <div class="text-musica">
-                    <h3 class="title">Guetto (2020)</h3>
-                    <h4 class="long-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi odio quae debitis et laboriosam consectetur quam minus doloremque quasi sed laborum.</h4>
+                <div class="overlay-musica">
+                    <a href="https://open.spotify.com/album/0HSiEQSPDsMjmWrW1UEu6m?si=rctFvP0TTuyPanMN3DCe2g" target="blank"><i class="fa-brands fa-spotify" id="spotify"></i></a>
                 </div>
-                
-                
-            </a>
+            </article>
 
-            <a href="">
+            <article href="">
                 <img src="assets/images/index_musica/el-deseo-de-la-luna-el-camino-del-fuego-2022.jpg" class="img-musica" alt="">
-                
-                <div class="text-musica">
-                    <h3 class="title">El deseo de La Luna el camino del Fuego (2022)</h3>
-                    <h4 class="long-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi odio quae debitis et laboriosam consectetur quam minus doloremque quasi sed laborum.</h4>
+                <div class="overlay-musica">
+                    <a href="https://open.spotify.com/album/4q3miiR7fdjTuyLIcXd5Ab?si=DRAR_ArlRlqDlY-G-e500A" target="blank"><i class="fa-brands fa-spotify" id="spotify"></i></a>
                 </div>
-            </a>
+            </article>
+        </div>
 
+        <div id="iconos">
+            <a href="https://on.soundcloud.com/J2LQr" target="blank"><i class="fa-brands fa-soundcloud" id="soundcloud"></i></a>
+            <a href="https://youtu.be/JMpAAliv4Dc" target="blank"><i class="fa-brands fa-youtube" id="youtube"></i></a>
+            <a href="https://on.soundcloud.com/8r4mq" target="blank"><i class="fa-brands fa-soundcloud" id="soundcloud"></i></a>
+            <a href="https://open.spotify.com/album/0HSiEQSPDsMjmWrW1UEu6m?si=rctFvP0TTuyPanMN3DCe2g" target="blank"><i class="fa-brands fa-spotify" id="spotify"></i></a>
+            <a href="https://open.spotify.com/album/4q3miiR7fdjTuyLIcXd5Ab?si=DRAR_ArlRlqDlY-G-e500A" target="blank"><i class="fa-brands fa-spotify" id="spotify"></i></a>
         </div>
     </main>
 
 </body>
 
 <footer>
-    <p class="title">© garibaldi.com - 2023</p>
 </footer>
 
-<script src="assets/script/script.js"></script>
+<script src="assets/script/discos.js"></script>
+<script src="assets/script/responsive-var.js"></script>
 
 </html>

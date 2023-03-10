@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+	<meta charset=”UTF-8”>
+	<title>Diego Garibaldi</title>
+
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <!--<link href="assets/css/responsive.css" rel="stylesheet" type="text/css">-->
+    <link rel="shortcut icon" href="assets/images/logo.png"/>
+
+    <script src="https://kit.fontawesome.com/ecb957ab20.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<header>
+    <nav id="nav-responsive">
+        <a href=""><h1 class="title">Garibaldi</h1></a>
+        <i class="fa-solid fa-bars" id="nav-bar"></i>
+        <div id="overlay-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="long-text" id="logo">Home</a></li>
+                        <li><a href="musica.html" class="long-text" id="logo">Música</a></li>
+                        <li><a href="contactoFoto.html" class="long-text" id="logo">Contacto</a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/fviveinfo_diego_garibaldi/" target="_blank" class="icon"><i id="logo" class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+        </div>
+    </nav>
+
+    <nav id="nav-desktop">
+        <ul>
+            <li><a href="index.html" class="title" id="logo">Garibaldi</a></li>
+            <li><a href="musica.html" class="long-text" id="logo">Música</a></li>
+            <li><a href="contactoFoto.html" class="long-text">Contacto</a></li>
+            <li id="instagram"><a href="https://www.instagram.com/fviveinfo_diego_garibaldi/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <a id="pasajeros">
+            <h1 id="texto-pasajeros">
+                <h2 class="title">Autorretrato</h2>
+                <h2 class="title" id="año">(2011)</h2>
+            </h1>
+        </a>
+
+        <div id="carrousell-autorretrato">
+
+            <div id="aside-menu">
+
+            </div>
+
+            <div class="paginador">
+                <p class="pag" id="izq"><</p>
+                <p class="pag" id="der">></p>
+                <p class="long-text" class="pag" id="pagina"></p>
+            </div>
+            <img src="" id="carrousel-img" alt="" class="img-carrousell">
+        </div>
+
+    </main>
+
+</body>
+
+<script>
+    img = $("#carrousel-img");
+
+    var posicionVector = 1;
+
+    document.getElementById("carrousel-img").src="assets/images/autorretrato/0"+posicionVector+".JPG";
+
+    $("#pagina").text(posicionVector+"/5");
+
+    $("#izq").click(function(){
+        if(posicionVector <= 1){
+            posicionVector = 1;
+        }else{
+            posicionVector--;
+        }
+        if(posicionVector < 1){
+            $("#pagina").text("1/5");
+        }else{
+            $("#pagina").text(posicionVector+"/5");
+        }
+
+        document.getElementById("carrousel-img").src="assets/images/autorretrato/0"+posicionVector+".JPG";
+    });
+
+    $("#der").click(function(){
+        if(posicionVector >= 5){
+            posicionVector = 5;
+        }else{
+            posicionVector++;
+            $("#pagina").text(posicionVector+"/5");
+        }
+        document.getElementById("carrousel-img").src="assets/images/autorretrato/0"+posicionVector+".JPG";
+    });
+
+
+</script>
+
+<script src="assets/script/script.js"></script>
+<script src="assets/script/responsive-var.js"></script>
+
+</html>

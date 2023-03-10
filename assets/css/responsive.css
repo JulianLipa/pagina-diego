@@ -1,0 +1,149 @@
+/*Mobile*/
+
+
+@media (max-width:480px) {
+
+    /*Index*/
+    
+    #garibaldi{
+        width: 80%;
+    }
+
+    #nav-home{
+        display: flex !important;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    #ul-home{
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 40%;
+    }
+
+    #li-home{
+        width: 100%;
+        border: 1px solid var(--main-color);
+
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+
+        font-size: 2em !important;
+        text-decoration: none;
+        list-style: none;
+        background-color: black;
+    }
+
+    #li-home a{
+        font-size: 1.5em !important;
+        color: white;
+    }
+
+
+    /*Fotografia*/
+
+    #nav-responsive{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 20%;
+    }
+
+    #nav-bar{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 4em;
+    }
+
+    #nav-responsive h1 .title{
+        padding: 0 10% !important;
+        z-index: 100;
+        width: 100%;
+    }
+
+    #overlay-menu{
+        display: flex;
+        position: absolute;
+        top: 130px;
+        width: 40%;
+        height: 18vh;
+        z-index: 0;
+        background-color: rgba(70, 70, 70, 0.493);
+    }
+
+    .header-responisve{
+        height: 20vh;
+    }
+
+    #overlay-menu nav{
+        margin: 0 auto;
+    }
+
+    #overlay-menu nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    #overlay-menu nav ul li{
+        width: 100%;
+        text-decoration: none;
+        margin: 2% auto;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+    #overlay-menu nav ul li a{
+        color: white;
+    }
+
+    #nav-desktop{
+        display: none;
+    }
+
+    #logo{
+        font-size: 4em !important;
+    }
+
+    .card{
+        width: 100% !important;
+    }
+
+    .title{
+        font-size: 3em !important;
+    }
+
+    .long-text{
+        font-size: 1.5em !important;
+    }
+
+    .card-img{
+        width: 100% !important;
+        height: 500px !important;
+        object-fit: cover;
+    }
+
+    
+    /*Musica*/
+
+    #musica-logo{
+        margin-left: 5.8% !important;
+        width: 30%;
+
+        justify-content: center !important;
+    }
+
+    #card-musica a{
+        width: 100% !important;
+    }
+
+    /*Contacto*/
+
+
+}

@@ -19,6 +19,5 @@ pasajeros.addEventListener('mouseout', () => {
 });
 
 volver.onclick = function(){
-  window.location.href = 'index.html';
-  console.log("s");
+  window.location.href = 'fotografia.html';
 };
